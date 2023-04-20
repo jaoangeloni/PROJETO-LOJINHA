@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background:linear-gradient(to right bottom, #601990, #ce4076);
+}
+header{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+table{
+    width: 700px;
+    border-collapse: collapse;
+    border-radius: 200px;
+}
+th{
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+td{
+    background-color: #ffffff8c;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+input{
+    padding: 5px;
+    outline: none;
+}
+button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.apagar{
+    background: none;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/542/542724.png");
+    background-size: cover;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#vendedores{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#tabelas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffffff8c;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    gap: 50px;
+}
+#vendas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.title{
+    color: white;
+    font-size: 1.2rem;
+}

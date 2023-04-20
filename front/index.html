@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>Gerenciamento Lojinho</p>
+    </header>
+
+    <main>
+        <section id="vendedores">
+
+            <div id="tabelas">
+                <p class="title">Vendedores</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Matricula</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaVendedor"></tbody>
+                </table>
+                
+                <p class="title">Produtos</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Valor</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaProdutos"></tbody>
+                </table>
+            </div>
+
+            <div class="form">
+                <p>Alterar dados de vendedores</p>
+                <div>
+                    <input type="number" name="iId" id="iId" placeholder="ID do vendedor" required>
+                    <input type="text" name="iNome" id="iNome" placeholder="Novo nome" required>
+                    <input type="number" name="iMatricula" id="iMatricula"placeholder="Nova matricula" required>
+                    <button onclick="alterarVendedor()">Alterar dados</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="vendas">
+            <p class="title">Vendas</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Data</th>
+                        <th>Quantidade</th>
+                        <th>Vendedor</th>
+                        <th>Produto</th>
+                        <th>Excluir </th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaVendas"></tbody>
+            </table>
+
+            <div class="form">
+                <p>Alterar venda</p>
+                <div>
+                    <input type="number" name="iIdVenda" id="iIdVenda" placeholder="ID da venda" required>
+                    <input type="number" name="iQtd" id="iQtd" placeholder="Nova quantidade" required >
+                    <input type="number" name="iVendedor" id="iVendedor" placeholder="ID novo vendedor" required>
+                    <input type="number" name="iProduto" id="iProduto" placeholder="ID novo produto" required>
+                    <button onclick="alterarVenda()">Alterar dados</button>
+                </div>
+            </div>
+
+            <div class="form">
+                <p>Cadastrar venda</p>
+                <div>
+                    <input type="number" name="cQtd" id="cQtd" placeholder="Quantidade" required>
+                    <input type="number" name="cVendedor" id="cVendedor" placeholder="ID vendedor" required>
+                    <input type="number" name="cProduto" id="cProduto" placeholder="ID produto" required>
+                    <button onclick="cadastrarVenda()">Cadastrar venda</button>
+                </div>
+            </div>
+        </section>
+
+        </main>
+</body>
+<script src="script.js"></script>
+</html>
